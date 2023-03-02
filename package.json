@@ -13,5 +13,6 @@
   "dependencies": {
     "vite": "^4.1.4"
   },
-  "type": "module"
+  "type": "module",
+  "homepage": "https://amandarosr.github.io/Select-Pet/"
 }
