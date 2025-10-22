@@ -18,22 +18,22 @@ dogBtn.addEventListener('click', () => {
 })
 
 catBtn.addEventListener('click', () => {
-  fetch('https://aws.random.cat/meow')
+  fetch('https://api.thecatapi.com/v1/images/search')
     .then((response) => response.json())
     .then((data) => {
-      const { file } = data;
+      const { url } = data[0];
       image.style.display = 'inline-block'
-      image.src = file;
+      image.src = url;
       text.style.display = 'none';
     })
   })
 
 surpriseBtn.addEventListener('click', () => {
   Promise.any([fetch('https://dog.ceo/api/breeds/image/random'),
-  fetch('https://aws.random.cat/meow')])
+  fetch('https://api.thecatapi.com/v1/images/search')])
   .then((response) => response.json())
   .then((data) => {
-    const petURL = (data.file || data.message);
+    const petURL = (data[0].url || data.message);
     image.style.display = 'inline-block'  
     image.src = petURL;
     text.style.display = 'none';
