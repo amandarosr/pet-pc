@@ -37,5 +37,5 @@ surpriseBtn.addEventListener('click', () => {
     image.style.display = 'inline-block'  
     image.src = petURL;
     text.style.display = 'none';
-  });
+  }); //fix randomization
 });
