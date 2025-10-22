@@ -4,38 +4,40 @@ const dogBtn = document.querySelector('#dog');
 const catBtn = document.querySelector('#cat');
 const surpriseBtn = document.querySelector('#surprise');
 const text = document.querySelector('#placeholder');
-const image = document.querySelector('img');
+const img = document.querySelector('img');
 
-dogBtn.addEventListener('click', () => {
+dogBtn.addEventListener('dblclick', () => {
   fetch('https://dog.ceo/api/breeds/image/random')
     .then((response) => response.json())
     .then((data) => {
         const { message } = data;
-        image.style.display = 'inline-block'
-        image.src = message;
+        img.style.display = 'inline-block'
+        img.src = message;
         text.style.display = 'none';
     })
 })
 
-catBtn.addEventListener('click', () => {
+catBtn.addEventListener('dblclick', () => {
   fetch('https://api.thecatapi.com/v1/images/search')
     .then((response) => response.json())
     .then((data) => {
       const { url } = data[0];
-      image.style.display = 'inline-block'
-      image.src = url;
+      img.style.display = 'inline-block'
+      img.src = url;
       text.style.display = 'none';
+      console.log(url);
+      
     })
   })
 
-surpriseBtn.addEventListener('click', () => {
-  Promise.any([fetch('https://dog.ceo/api/breeds/image/random'),
-  fetch('https://api.thecatapi.com/v1/images/search')])
+surpriseBtn.addEventListener('dblclick', () => {
+  fetch('https://randomfox.ca/floof/?ref=public_apis&utm_medium=website')
   .then((response) => response.json())
   .then((data) => {
-    const petURL = (data[0].url || data.message);
-    image.style.display = 'inline-block'  
-    image.src = petURL;
+    const { image } = data;
+    img.style.display = 'inline-block'  
+    img.src = image;
     text.style.display = 'none';
-  }); //fix randomization
+    
+  });
 });
