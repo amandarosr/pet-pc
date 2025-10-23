@@ -1,5 +1,5 @@
 {
-  "name": "select-pet",
+  "name": "pet-pc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,5 +15,8 @@
     "vite": "^4.1.4"
   },
   "type": "module",
-  "homepage": "https://amandarosr.github.io/Select-Pet/"
+  "homepage": "https://amandarosr.github.io/pet-pc/",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
