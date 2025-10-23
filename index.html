@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Select Pet</title>
-    <link rel="stylesheet" href="src/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet PC</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
     <main>
-        <h1>Select pet</h1>
-        <div id="all-buttons">
-            <button class="btn" id="dog">Get random dog</button>
-            <button class="btn" id="cat">Get random cat</button>
-            <button class="btn" id="surprise">Surprise me</button>
+      <div id="all-buttons">
+        <button class="btn" id="dog">
+          <img src="./src/images/dog.png" class="icon" alt="pixel-dog" />
+        </button>
+        <button class="btn" id="cat">
+          <img src="./src/images/cat.png" class="icon" alt="pixel-cat" />
+        </button>
+        <button class="btn" id="surprise">?</button>
+      </div>
+      <div id="frame">
+        <div class="animal-pic" id="dog-div">
+          <div class="pic-header">
+            <button class="close-btn" id="dog-close">x</button>
+          </div>
+          <img src="" alt="" id="dog-pic" />
         </div>
-        <div id="frame">
-            <div id="placeholder">Random pet</div>
-            <img src="" alt="" id="animal-pic">
+        <div class="animal-pic" id="cat-div">
+          <div class="pic-header">
+            <button class="close-btn" id="cat-close">x</button>
+          </div>
+          <img src="" alt="" id="cat-pic" />
         </div>
+        <div class="animal-pic" id="fox-div">
+          <div class="pic-header">
+            <button class="close-btn" id="fox-close">x</button>
+          </div>
+          <img src="" alt="" id="fox-pic" />
+        </div>
+      </div>
+      <footer>
+        <img src="./src/images/paw.png" alt="paw-logo" id="paw-icon" />
+        <h1 id="title">Pet PC</h1>
+        <h2 class="h2" id="current-task">Select a pet and say "aaaaw!"</h2>
+        <h2 class="h2" id="adult-task">Important work and other adult stuff</h2>
+      </footer>
     </main>
     <script src="src/main.js" type="module"></script>
-</body>
+  </body>
 </html>
