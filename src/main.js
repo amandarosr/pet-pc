@@ -4,7 +4,7 @@ const dogBtn = document.querySelector('#dog');
 const catBtn = document.querySelector('#cat');
 const surpriseBtn = document.querySelector('#surprise');
 const text = document.querySelector('#placeholder');
-const img = document.querySelector('img');
+const img = document.querySelector('#animal-pic');
 
 dogBtn.addEventListener('dblclick', () => {
   fetch('https://dog.ceo/api/breeds/image/random')
