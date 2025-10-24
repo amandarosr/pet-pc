@@ -38,6 +38,8 @@ function App() {
       });
   }
 
+  const closeTab = (setState) => setState(null);
+
   return (
     <main>
       <div id="all-buttons">
@@ -55,7 +57,7 @@ function App() {
         {dogPic && (
           <div className="animal-pic" id="dog-div">
             <div className="pic-header">
-              <button className="close-btn" id="dog-close">
+              <button onClick={() => closeTab(setDogPic)} className="close-btn" id="dog-close">
                 x
               </button>
             </div>
@@ -65,7 +67,7 @@ function App() {
         {catPic && (
           <div className="animal-pic" id="cat-div">
             <div className="pic-header">
-              <button className="close-btn" id="cat-close">
+              <button onClick={() => closeTab(setCatPic)} className="close-btn" id="cat-close">
                 x
               </button>
             </div>
@@ -75,7 +77,7 @@ function App() {
         {foxPic && (
           <div className="animal-pic" id="fox-div">
             <div className="pic-header">
-              <button className="close-btn" id="fox-close">
+              <button onClick={() => closeTab(setFoxPic)} className="close-btn" id="fox-close">
                 x
               </button>
             </div>
