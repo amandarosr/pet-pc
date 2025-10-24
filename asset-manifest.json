@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/pet-pc/static/css/main.23e16997.css",
+    "main.js": "/pet-pc/static/js/main.9d2938b9.js",
+    "static/js/453.d2ab2416.chunk.js": "/pet-pc/static/js/453.d2ab2416.chunk.js",
+    "static/media/cat.png": "/pet-pc/static/media/cat.ab7682c9d6b6fa82bae1.png",
+    "static/media/windows_xp_pixel_art.jpg": "/pet-pc/static/media/windows_xp_pixel_art.7ccdb183951b0a3a94fe.jpg",
+    "static/media/paw.png": "/pet-pc/static/media/paw.3131d24091cfb809d146.png",
+    "static/media/dog.png": "/pet-pc/static/media/dog.185e6a410691910f919e.png",
+    "static/media/PixelOperator.ttf": "/pet-pc/static/media/PixelOperator.b42790276a8fc0c79bda.ttf",
+    "index.html": "/pet-pc/index.html",
+    "main.23e16997.css.map": "/pet-pc/static/css/main.23e16997.css.map",
+    "main.9d2938b9.js.map": "/pet-pc/static/js/main.9d2938b9.js.map",
+    "453.d2ab2416.chunk.js.map": "/pet-pc/static/js/453.d2ab2416.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23e16997.css",
+    "static/js/main.9d2938b9.js"
+  ]
+}
