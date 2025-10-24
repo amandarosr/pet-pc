@@ -4,6 +4,7 @@ import dog from "./images/dog.png";
 import cat from "./images/cat.png";
 
 function App() {
+  //need to add script
   return (
     <main>
       <div id="all-buttons">
