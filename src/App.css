@@ -94,11 +94,6 @@ main {
   max-height: 400px;
 }
 
-#placeholder {
-  font-size: 20px;
-  text-align: center;
-}
-
 #paw-icon {
   height: 32px;
   padding: 5px;
@@ -172,6 +167,7 @@ footer {
   }
 
   #frame {
+    align-self: center;
     margin: 10px 10px 0 20px;
   }
 
