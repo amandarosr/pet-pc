@@ -21,7 +21,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 80%;
+  height: 85vh;
   width: 100%;
 }
 
@@ -37,27 +37,37 @@ main {
 }
 
 .icon {
+  margin: 0;
   height: 100px;
+}
+
+.icon:active, #surprise:active {
+  border-radius: 5px;
+  background-color: #9a9a9780;
+  box-shadow: inset 1px 1px 2.5px 2px #d6d4d4;
 }
 
 #surprise {
   color: rgb(123, 99, 171);
   text-shadow: 3px 2px 0 white;
-  font-size: 100px;
+  font-size: 90px;
   font-weight: 600;
+  margin: 0;
 }
 
 #frame {
-  align-self: center;
+  align-self: flex-end;
   margin-right: 30px;
 }
 
 .animal-pic {
+  display: inline-block;
   background-color: lavender;
   border-radius: 5px;
   border-top: none;
   box-shadow: 3px 3px 0 1px #6e6962;
   margin: 15px;
+  animation: scale-up-bottom-left 0.4s;
 }
 
 .pic-header {
@@ -82,12 +92,6 @@ main {
   border-top: none;
   max-width: 350px;
   max-height: 400px;
-}
-
-#dog-div,
-#cat-div,
-#fox-div {
-  display: none;
 }
 
 #placeholder {
