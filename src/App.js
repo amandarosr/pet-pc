@@ -2,6 +2,7 @@ import './App.css';
 import pawLogo from "./images/paw.png";
 import dog from "./images/dog.png";
 import cat from "./images/cat.png";
+// import Swal from "sweetalert2";
 
 function App() {
   //need to add script
