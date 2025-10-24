@@ -180,7 +180,7 @@ footer {
   }
 
   .animal-pic img {
-    max-width: 230px;
+    max-width: 215px;
     max-height: 200px;
   }
 
@@ -195,7 +195,7 @@ footer {
     text-wrap: nowrap;
   }
   .h2 {
-    width: 25%;
+    width: 20%;
     font-size: 18px;
     text-wrap: nowrap;
     overflow-x: hidden;
